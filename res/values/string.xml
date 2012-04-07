@@ -11,5 +11,7 @@
     <string name="actionbar">ActionBar Test</string>
     <string name="hello">hello world!</string>
     <string name="OK">확인</string>
+   	<string name="pick_contact">전화번호부목록가져오기</string>
+   	<string name="contactList">ContactList TEST</string>
 
 </resources>
