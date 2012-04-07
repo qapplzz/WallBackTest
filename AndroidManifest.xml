@@ -5,9 +5,10 @@
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="4" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -50,6 +51,19 @@
                 <category android:name="category.android.test" />
             </intent-filter>
         </activity>
+
+        <!-- Broadcast Receiver that will process AppWidget updates -->
+        <receiver
+            android:name="com.wallback.android.widget.test.HelloWidget"
+            android:label="@string/widget_text" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hello_widget_provider" />
+        </receiver>
     </application>
 
 </manifest>
