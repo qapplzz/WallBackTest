@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WallBackTest!</string>
+    <string name="app_name">WallBackTest</string>
+    <string name="hello_world">hello World!!!!!!!!!</string>
+    <string name="actionbar_simple_content">ActionBar</string>
+    <string name="pick_contact">전화번호부목록가져오기</string>
+    <string name="contactList">ContactList TEST</string>
+    <string name="widget_text">Hello Widget!</string>
+    <string name="actionbar">ActionBar Test</string>
+
+</resources>
