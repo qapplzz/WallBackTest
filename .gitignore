@@ -1,8 +1,4 @@
 bin/
 dist/
 gen/
-assets/auto_gen_build.properties
 .svn/
-local.properties
-.DS_Store
-Thumbs.db
