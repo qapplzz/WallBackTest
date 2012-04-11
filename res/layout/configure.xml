@@ -1,0 +1,20 @@
+<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:id="@+id/TextNikeId"
+		android:text="Text" 
+		android:textColor="@android:color/white" 
+		android:textSize="15dip" 
+		android:textStyle="bold" 
+		android:layout_marginTop="5dip"/>
+	<EditText android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:id="@+id/txtFieldId"
+		android:clickable="true" 
+		android:inputType="number" 
+		android:layout_marginTop="5dip"
+		android:layout_marginBottom="20dip"/>
+</TableLayout>

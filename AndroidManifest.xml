@@ -58,12 +58,20 @@
             android:label="@string/widget_text" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <!-- Broadcast Receiver that will also process our self created action -->
+                <action android:name="de.thesmile.android.widget.buttons.ButtonWidget.ACTION_WIDGET_RECEIVER" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/hello_widget_provider" />
+                android:resource="@xml/button_widget_provider" />
         </receiver>
+        <!-- this activity will be called, when we fire our self created ACTION_WIDGET_CONFIGURE -->
+        <activity android:name=".ClickOneActivity" >
+            <intent-filter>
+                <action android:name="de.thesmile.android.widget.buttons.ButtonWidget.ACTION_WIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
